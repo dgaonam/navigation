@@ -1,10 +1,10 @@
 import { Pressable,Text } from "react-native";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
-const Buttons=({label,onHandlerPress,icon,size,color ,styles})=>{
+const ButtonsCam=({label,onHandlerPress,icon,size,color ,styles})=>{
     
     return(
-        <Pressable onPress={onHandlerPress} style={[styles.button,{backgroundColor:color}]}>
+        <Pressable onPress={onHandlerPress} style={[styles.buttonCam,{backgroundColor:color}]}>
         <FontAwesome
             name={icon}
             size={size}
@@ -16,4 +16,4 @@ const Buttons=({label,onHandlerPress,icon,size,color ,styles})=>{
     );
 };
 
-export default Buttons;
+export default ButtonsCam;

@@ -1,8 +1,9 @@
 import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
+import styles from "./components/Styles/Styles"
 
 import Home from './components/Home/Home';
 import AbountUs from './components/AbountUs/AbountUs';
@@ -14,31 +15,33 @@ const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
+    
+    <NavigationContainer styles={styles.container}>
+      <Stack.Navigator initialRouteName="Home" >
         <Stack.Screen
-            name="Home"
-            options={{title: 'Inicio'}}
-            component={Home}
-          />
-           <Stack.Screen
-            name="Contact"
-            options={{title: 'Contactos'}}
-            
-            component={Contact}
-          />
-          <Stack.Screen
-            name="AbountUs"
-            options={{title: 'Sobre nosotros'}}
-            component={AbountUs}
-          />
+          name="Home"
+          options={{ title: 'Inicio' }}
+          component={Home}
+        />
+        <Stack.Screen
+          name="Contact"
+          options={{ title: 'Contactactanos' }}
 
-<Stack.Screen
-            name="Cam"
-            options={{title: 'Camara'}}
-            component={Cam}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
+          component={Contact}
+        />
+        <Stack.Screen
+          name="AbountUs"
+          options={{ title: 'Sobre nosotros' }}
+          component={AbountUs}
+        />
+
+        <Stack.Screen
+          name="Cam"
+          options={{ title: 'Camara' }}
+          component={Cam}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+    
   );
 };

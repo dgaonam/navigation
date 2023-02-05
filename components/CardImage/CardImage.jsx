@@ -1,6 +1,6 @@
 import { Image } from "react-native";
 
-const CardImage=({url,diseño,imagen})=>{
+const CardImage=({url,style,imagen})=>{
   const imagenSelected=imagen!==null ? imagen:url;
   
   console.log("Ruta: ", url);
@@ -8,7 +8,7 @@ const CardImage=({url,diseño,imagen})=>{
     return(
         <Image
           source={{uri: imagenSelected}}
-          style={diseño.image}
+          style={style.image}
         />
     );
 };
