@@ -1,14 +1,17 @@
-import { Text, View } from "react-native";
+import { Image, Text, View,image } from "react-native";
 import { TextInput } from "@react-native-material/core";
 import Buttons from "../Buttons/Buttons";
 import styles from "../Styles/Styles";
 import { useState } from "react";
 import Input from "../Input/Input";
 const Contact = () => {
-  const [text, onChangeText] = useState('');
-  const [number, onChangeNumber] = useState('');
+  
   return (
     <View style={{flex:6,flexDirection:"column"}}>
+      <Image
+          source={{uri: "../assets/adaptive-icon.png"}}
+          style={{flex:5}}
+        />
       <Input label={"Nombre"} placeholder={"Ingresa tu nombre"} />
       <Input label={"Paterno"} placeholder={"Apellido paterno"} />
       <Input label={"Materno"} placeholder={"Aplellido materno"} />

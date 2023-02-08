@@ -27,13 +27,15 @@ const styles = StyleSheet.create({
     
   },
   buttonIcon: {
-    paddingRight: 20,
-    fontSize: 25,
+    paddingRight: 10,
+    paddingLeft: 10,
+    fontSize: 20,
     color: "#FFFFFF"
   },
   buttonLabel: {
     fontSize: 16,
-    color: "#FFFFFF"
+    color: "#FFFFFF",
+    paddingRight: 10
   },
   camera: {
     flex: 9,
@@ -88,8 +90,9 @@ const styles = StyleSheet.create({
     paddingLeft: 0,
     backgroundColor: '#fff',
     color: '#4B0F75',
-    borderRadius: 5,
+    borderRadius: 2,
     borderWidth: 1,
+    width:'100%',
     borderColor: '#4B0F75',
   },
 });
