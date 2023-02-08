@@ -9,7 +9,7 @@ const Home = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={{flex:1,fontSize:25, fontWeight:"bold"}}>Bienvenidos practica .</Text>
       <Image
-          source={imgHome}
+          source={{uri: imgHome}}
           style={styles.imageHome}
         />
       <View style={{flex:1, flexDirection:"row"}}>

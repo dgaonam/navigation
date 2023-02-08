@@ -4,13 +4,14 @@ import Buttons from "../Buttons/Buttons";
 import styles from "../Styles/Styles";
 import { useState } from "react";
 import Input from "../Input/Input";
+import imgContact from "../../assets/contactanos.jpg";
 const Contact = () => {
   
   return (
-    <View style={{flex:6,flexDirection:"column"}}>
+    <View style={{flex:6,flexDirection:"column", alignContent:"center"}}>
       <Image
-          source={{uri: "../assets/adaptive-icon.png"}}
-          style={{flex:5}}
+          source={{uri: imgContact}}
+          style={{flex:4, width:"40%",alignContent: "center"}}
         />
       <Input label={"Nombre"} placeholder={"Ingresa tu nombre"} />
       <Input label={"Paterno"} placeholder={"Apellido paterno"} />
