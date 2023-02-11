@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
     
   },
   buttonIcon: {
-    paddingRight: 10,
-    paddingLeft: 10,
+    paddingRight: 5,
+    paddingLeft: 5,
     fontSize: 20,
     color: "#FFFFFF"
   },
@@ -68,8 +68,9 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   imageHome: {
-    flex:8,
+    flex:5,
     borderRadius: 5,
+    
   },
   inputSection: {
     flex: 2,
