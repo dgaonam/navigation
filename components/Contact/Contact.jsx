@@ -11,14 +11,15 @@ const Contact = () => {
   const [data, setData] = useState([]);
   
   function postData() {
-    const response = fetch("https://localhost/api/contactanos", {
+    const response = fetch("http://localhost/api/contactanos", {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
     }).then((response) => response.json())
       .then((responseJson) => {
         
-        setData(responseJson.results);
-        alert(data);
+        setData(responseJson);
+        console.log(data);
+        alert(data.Mensaje);
       })
       .catch((error) => {
         //Error
