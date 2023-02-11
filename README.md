@@ -1,7 +1,8 @@
 # navigation
 
-Inicio
+Inicio<br>
 ![Captura desde 2023-02-10 21-57-22](https://user-images.githubusercontent.com/67657380/218238317-637ef9d5-36bd-4e55-8fc3-873651dbb1bc.png)
+<br>
 Contactanos
 ![Captura desde 2023-02-10 22-05-08](https://user-images.githubusercontent.com/67657380/218238321-af4d5bc4-d463-42b5-b141-94c193d59caf.png)
 Quienes somos
